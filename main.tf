@@ -9,6 +9,11 @@ terraform {
 }
 
 
+provider "azurerm" {
+  features {}
+}
+
+
 
 # Resource group name is output when execution plan is applied.
 resource "azurerm_resource_group" "sh" {
