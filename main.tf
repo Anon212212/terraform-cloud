@@ -1,3 +1,15 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 2.0"
+
+    }
+  }
+}
+
+
+
 # Resource group name is output when execution plan is applied.
 resource "azurerm_resource_group" "sh" {
   name     = var.rg_name
